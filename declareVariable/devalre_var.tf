@@ -16,9 +16,17 @@
 //}
 //type constraints are optional and type is any means can declare any type of value
 
-variable anyvalue {
-  type = any
+//variable anyvalue {
+//  type = any
+//}
+//output "messg"{
+//  value ="any type value can allow,${var.anyvalue}"
+//}
+//list
+variable list_values{
+  type = list(string)
+  default=["abc","bcd"]
 }
-output "messg"{
-  value ="any type value can allow,${var.anyvalue}"
+output val {
+  value = "result,${var.list_values[1]}"
 }
