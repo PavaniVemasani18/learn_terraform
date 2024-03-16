@@ -6,11 +6,20 @@
 //}
 
 //declare a variable with value
-variable name {
+//variable name {
 //  type = string
-  default = "hai"
-}
+//  default = "hai"
+//}
+//
+//output "msg" {
+//  value = "${var.name}"
+//}
+//type constraints are optional and type is any means can declare any type of value
 
-output "msg" {
-  value = "${var.name}"
+variable anyvalue
+{
+  type = any
+}
+output "messg"{
+  value ="any type value can allow,${var.anyvalue}"
 }
