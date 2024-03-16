@@ -28,5 +28,5 @@ variable list_values{
   default=["abc","bcd"]
 }
 output val {
-  value = "result ${var.list_values}"
+  value = var.list_values
 }
