@@ -23,10 +23,21 @@
 //  value ="any type value can allow,${var.anyvalue}"
 //}
 //list
-variable list_values{
-  type = list(string)
-  default=["abc","bcd"]
+//variable list_values{
+//  type = list(string)
+//  default=["abc","bcd"]
+//}
+//output val {
+//  value = var.list_values
+//}
+
+variable map_values{
+  type = map(string)
+  default={
+    x="devops"
+    y="terraform"
+  }
 }
 output val {
-  value = var.list_values
+  value = var.map_values
 }
