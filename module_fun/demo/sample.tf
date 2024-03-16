@@ -1,2 +1,2 @@
-resource "resource" "test"{}
+resource "aws_instance" "page"{}
 
