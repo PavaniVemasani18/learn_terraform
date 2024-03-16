@@ -16,8 +16,7 @@
 //}
 //type constraints are optional and type is any means can declare any type of value
 
-variable anyvalue
-{
+variable anyvalue {
   type = any
 }
 output "messg"{
