@@ -7,7 +7,7 @@
 
 //declare a variable with value
 variable name {
-  type = string
+//  type = string
   default = "hai"
 }
 
