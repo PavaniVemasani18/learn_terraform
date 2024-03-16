@@ -1,2 +1,2 @@
-resource "aws_instance" "page"{}
+resource "null_resource" "page"{}
 
