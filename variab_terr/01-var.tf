@@ -29,3 +29,6 @@ output "map_test" {
   value = var.x_map
 }
 
+output "test1"{
+  value = var.x_map["y"]
+}
