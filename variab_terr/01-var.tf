@@ -13,7 +13,7 @@ output "demo"{
 }
 
 variable "z"{
-  value=[10,20,30]
+  list=[10,20,30]
 }
 output "z_list" {
   value = var.z[0]
