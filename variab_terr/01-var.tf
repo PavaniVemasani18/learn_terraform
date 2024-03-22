@@ -7,3 +7,7 @@ output "test" {
 }
 
 variable "y"{}
+
+output "demo"{
+  value=var.y
+}
