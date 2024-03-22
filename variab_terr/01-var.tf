@@ -5,3 +5,5 @@ variable "x"{
 output "test" {
   value = var.x
 }
+
+variable "y"{}
