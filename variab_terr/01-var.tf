@@ -19,3 +19,13 @@ output "z_list" {
   value = var.z[0]
 }
 
+variable "x_map"{
+  default={
+    x=10
+    y=20
+  }
+}
+output "map_test" {
+  value = var.x_map
+}
+
