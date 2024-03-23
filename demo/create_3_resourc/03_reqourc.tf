@@ -1,24 +1,27 @@
 resource "aws_instance" "frontend" {
-  ami = "ami-05f020f5935e52dc4"
-  instance_type = "t3.micro"
-  vpc_security_group_ids = ["sg-0972bb06b91851db8"]
+  ami = var.ami
+  instance_type = var.instance_type
+  vpc_security_group_ids = var.vpc_security_group_ids
   tags = {
     Name = "frontend"
   }
 }
 resource "aws_instance" "backend" {
-  ami = "ami-05f020f5935e52dc4"
-  instance_type = "t3.micro"
-  vpc_security_group_ids = ["sg-0972bb06b91851db8"]
+  ami = var.ami
+  instance_type = var.instance_type
+  vpc_security_group_ids = var.vpc_security_group_ids
   tags = {
     Name = "backend"
   }
 }
 resource "aws_instance" "mysql" {
-  ami = "ami-05f020f5935e52dc4"
-  instance_type = "t3.micro"
-  vpc_security_group_ids = ["sg-0972bb06b91851db8"]
+  ami = var.ami
+  instance_type = var.instance_type
+  vpc_security_group_ids = var.vpc_security_group_ids
   tags = {
     Name = "mysql"
   }
 }
+variable "ami"{}
+variable "instance_type"{}
+variable "vpc_security_group_ids"{}
