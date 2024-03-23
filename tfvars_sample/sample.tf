@@ -3,6 +3,6 @@ output "test" {
   value = var.env
 }
 variable "common"{}
-output "test1" {
+output "sample" {
   value = var.common
 }
