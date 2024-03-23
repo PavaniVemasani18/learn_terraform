@@ -6,7 +6,7 @@ output "security_group" {
   value = data.aws_security_group.lb_sg
 
 }
-variable "id" {}
+variable id {}
 output "sec_grp_id" {
   value = var.id
 }
