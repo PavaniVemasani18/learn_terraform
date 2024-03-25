@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
     bucket = "buckt-tf-states"
-    key = "testing/${var.env}/state"
+    key = "test1/${var.env}/state"
     region = "us-east-1"
   }
 }
